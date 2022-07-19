@@ -10,7 +10,7 @@ public class SalesPerson extends Employee {
 		setPercentPay(percentPay);
 	}
 
-	public void setSales(int sales) {
+	public void setSales(int sales) { 
 		this.sales = sales;
 	}
 

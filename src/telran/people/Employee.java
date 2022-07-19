@@ -9,7 +9,7 @@ public class Employee extends Person {
 		setBasicSalary(basicSalary);
 	}
 
-
+ 
 	public void setBasicSalary(int basicSalary) {
 		this.basicSalary = basicSalary;
 	}

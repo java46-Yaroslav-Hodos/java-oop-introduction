@@ -9,7 +9,7 @@ public class Person implements Comparable<Person>{
 		this.birthYear = birthYear;
 		setEmail(email);
 	}
-	public String getEmail() {
+	public String getEmail() { 
 		return email;
 	}
 	public void setEmail(String email) {
