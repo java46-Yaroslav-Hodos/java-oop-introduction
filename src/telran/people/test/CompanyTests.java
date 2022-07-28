@@ -3,6 +3,8 @@ package telran.people.test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -155,6 +157,18 @@ class CompanyTests {
 			Arrays.sort(res);
 		}
 		return res;
+	}
+	@Test
+	void NoSuchElementTest() {
+		boolean flException = false;
+		ICompany anotherCompany = new CompanyArray();
+		Iterator<Employee> it = anotherCompany.iterator();
+		try {
+			it.next();
+		} catch (NoSuchElementException e) {
+			flException = true;
+		}
+		assertTrue(flException);
 	}
 
 }
